@@ -17,7 +17,7 @@ const ChatMessage = ({ sender, message, isOwnMessage }: ChatMessageProps) => {
                 : isOwnMessage
                     ? "justify-end"
                     : "justify-start"}`} >
-            <div className={`max-w-xs px-4 rounded-lg  ${isSystemMessage ? "bg-gray-200" : isOwnMessage ? "bg-blue-500" : "bg-red-300"} transition delay-150 duration-300 ease-in-out`}>
+            <div className={`max-w-xs px-4 rounded-lg  ${isSystemMessage ? "bg-gray-200" : isOwnMessage ? "bg-blue-500" : "bg-red-300"}`}>
                 <div className='text-sm text-white  '>
                     {!isSystemMessage && <p className='text-sm font-bold'>{sender}</p>}
                     {message}
